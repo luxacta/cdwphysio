@@ -1,25 +1,34 @@
-import type {Metadata} from "next";
-import type {ReactNode} from "react";
-import {ModeToggle} from "@/components/mode-toggle";
-import {ThemeProvider} from "@/components/theme-provider";
-import {inconsolata, inter, kodeMono, notoSans, outfit} from "@/lib/font";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { ModeToggle } from "@/components/mode-toggle";
+import { ThemeProvider } from "@/components/theme-provider";
+import { inconsolata, inter, kodeMono, notoSans, outfit } from "@/lib/font";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CDWPHYSIO | Fracture Clinical Data Warehouse",
-  description: "CDWPHYSIO is a modern, secure, and scalable clinical data warehouse focused on managing and analyzing fracture-related healthcare data for research and clinical decision-making.",
+  description:
+    "CDWPHYSIO is a modern, secure, and scalable clinical data warehouse focused on managing and analyzing fracture-related healthcare data for research and clinical decision-making.",
 };
 
-export default function RootLayout({children,}: Readonly<{ children: ReactNode; }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <body
-      className={`${inconsolata.variable} ${outfit.variable} ${kodeMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}>
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-      {children}
-      <ModeToggle/>
-    </ThemeProvider>
-    </body>
+      <body
+        className={`${inconsolata.variable} ${outfit.variable} ${kodeMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <ModeToggle />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

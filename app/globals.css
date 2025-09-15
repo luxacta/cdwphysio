@@ -64,7 +64,7 @@
   --popover-foreground: oklch(0.129 0.042 264.695);
   --cdw-primary: oklch(0.7043 0.2786 249.07);
   --cdw-primary-foreground: oklch(0.984 0.003 247.858);
-  --cdw-secondary: oklch(0.205 0.060 95);
+  --cdw-secondary: oklch(0.205 0.06 95);
   --cdw-secondary-foreground: oklch(0.894 0.103 103.5);
   --primary: oklch(0.208 0.042 265.755);
   --primary-foreground: oklch(0.984 0.003 247.858);
@@ -108,7 +108,7 @@
   --cdw-primary: oklch(0.7043 0.2786 249.07);
   --cdw-primary-foreground: oklch(0.984 0.003 247.858);
   --cdw-secondary: oklch(0.894 0.103 103.5);
-  --cdw-secondary-foreground: oklch(0.205 0.060 95);
+  --cdw-secondary-foreground: oklch(0.205 0.06 95);
   --secondary-foreground: oklch(0.984 0.003 247.858);
   --muted: oklch(0.279 0.041 260.031);
   --muted-foreground: oklch(0.704 0.04 256.788);
@@ -154,11 +154,10 @@
   }
 
   .header-nav {
-    @apply mx-2 sm:container sm:mx-auto bg-cdw rounded-lg md:rounded-tl-none px-5 py-2.5 flex justify-between items-center
+    @apply mx-2 sm:container sm:mx-auto bg-cdw rounded-lg md:rounded-tl-none px-5 py-2.5 flex justify-between items-center;
   }
 
   .banner-img {
-    max-width: clamp(297px, 31.21vw, 594px) !important;
+    max-width: clamp(297px, 31.21vw, 594px);
   }
-
 }
