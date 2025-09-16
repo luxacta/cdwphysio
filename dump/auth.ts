@@ -1,6 +1,6 @@
-import { betterAuth } from "better-auth";
-import { mongodbAdapter } from "better-auth/adapters/mongodb";
-import clientPromise from "@/lib/db";
+import {betterAuth} from "better-auth";
+import {mongodbAdapter} from "better-auth/adapters/mongodb";
+import clientPromise from "@/dump/db";
 
 // Connect to the database and get the Db instance
 const getDb = async () => {
