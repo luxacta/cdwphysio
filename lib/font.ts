@@ -1,10 +1,4 @@
-import {
-  Inconsolata,
-  Inter,
-  Kode_Mono,
-  Noto_Sans,
-  Outfit,
-} from "next/font/google";
+import { Inconsolata, Inter, Kode_Mono, Noto_Sans, Outfit } from "next/font/google";
 
 export const inter = Inter({
   variable: "--font-inter",

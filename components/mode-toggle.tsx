@@ -2,7 +2,6 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -27,21 +26,19 @@ export function ModeToggle() {
         <DropdownMenuContent align="end" className="mr-2">
           <DropdownMenuItem
             onClick={() => setTheme("light")}
-            className={theme === "light" ? "bg-accent font-semibold" : ""}
-          >
+            className={theme === "light" ? "bg-accent font-semibold" : ""}>
             Light
           </DropdownMenuItem>
+
           <DropdownMenuItem
             onClick={() => setTheme("dark")}
-            className={theme === "dark" ? "bg-accent font-semibold" : ""}
-          >
+            className={theme === "dark" ? "bg-accent font-semibold" : ""}>
             Dark
           </DropdownMenuItem>
 
           <DropdownMenuItem
             onClick={() => setTheme("system")}
-            className={theme === "system" ? "bg-accent font-semibold" : ""}
-          >
+            className={theme === "system" ? "bg-accent font-semibold" : ""}>
             System
           </DropdownMenuItem>
         </DropdownMenuContent>
