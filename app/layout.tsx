@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         className={`${inconsolata.variable} ${outfit.variable} ${kodeMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
-          <Toaster />
+          <Toaster richColors={true} />
           <ModeToggle />
         </ThemeProvider>
       </body>

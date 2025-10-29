@@ -29,7 +29,9 @@ export default function Home() {
               </Link>
             </div>
             <Separator orientation="vertical" className="hidden sm:block" />
-            <Link href="/dataset/create" className="hover:text-cdw-primary transition-all flex items-center gap-x-2">
+            <Link
+              href="/app/dataset/create"
+              className="hover:text-cdw-primary transition-all flex items-center gap-x-2">
               <SquarePen size="15" className="stroke-3 stroke-cdw-secondary" />
               Create a Dataset
             </Link>

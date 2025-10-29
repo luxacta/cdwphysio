@@ -5,7 +5,7 @@ import { auth } from "@/lib/auth";
 
 export const config = {
   matcher: [
-    "/dataset/:path*", // Protect dataset
+    "/datasets/:path*", // Protect dataset
     "/admin/:path*", // Protect admin pages
   ],
   runtime: "nodejs",

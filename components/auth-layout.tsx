@@ -36,8 +36,8 @@ export function AuthLayout({ header, children }: AuthLayoutProps) {
   }
 
   // Choose BioDigital background color based on theme
-  const bgColor = currentTheme === "dark" ? "0.059,0.090,0.165,1,0.059,0.090,0.165,1" : "1,1,1,1,1,1,1,1";
-
+  // const bgColor = currentTheme === "dark" ? "0.059,0.090,0.165,1,0.059,0.090,0.165,1" : "1,1,1,1,1,1,1,1";
+  const bgColor = currentTheme === "dark" ? "0,0,0,1,0,0,0,1" : "1,1,1,1,1,1,1,1";
   // Construct dynamic iframe URL
   const iframeUrl = `https://human.biodigital.com/widget/?be=2Ejx&background.colors=${bgColor}&initial.hand-hint=true&ui-fullscreen=true&ui-center=false&ui-dissect=true&ui-zoom=true&ui-help=true&ui-tools-display=primary&ui-info=true&uaid=3bF12`;
 
@@ -53,6 +53,7 @@ export function AuthLayout({ header, children }: AuthLayoutProps) {
         <iframe
           key={currentTheme}
           src={iframeUrl}
+          title={"Biodigital Anatomage"}
           className="absolute inset-0 h-full w-full border-0"
           allowFullScreen></iframe>
       </div>
